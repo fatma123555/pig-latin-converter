@@ -3,11 +3,16 @@
 // check for if it is a sentene to be split up into an array
 // and in that function - check for punctuation to split it
 function pigLatinConverter(str) {
+    if (str == "") {
+        return "Write something here!"
+    } 
+    // if word is undefined - fix this! double spaces etc...
     new_sent = []
     arr_words = str.split(" ")
     for (var i = 0; i < arr_words.length; i++) {
         vowels = "aeiouAEIOU"
-        word = arr_words[i]
+        word = arr_words[i] 
+        console.log(word)
         if (vowels.includes(arr_words[i][0])) {
             new_word = word + "yay"
             new_sent.push(new_word)
@@ -25,7 +30,5 @@ function pigLatinConverter(str) {
 function getText() {
   var area = document.getElementById("text-to-convert");
   str = area.value // here we got value
-//   alert(pigLatinConverter(str) + " i did it");
   document.getElementById("output").innerHTML = pigLatinConverter(str)
-
 }
