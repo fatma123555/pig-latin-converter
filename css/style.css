@@ -10,10 +10,13 @@ header {
 
 main {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    height: 70vh;
+    /* background-color: blue; */
 }
+
 section {
     display: flex;
     width: 80%;
@@ -39,7 +42,7 @@ main h3 {
 /* box sizes */
 #text-to-convert {
     width: 80%;
-    height: 200px;
+    height: 300px;
     resize: none;
     margin-bottom: 20px;
 }

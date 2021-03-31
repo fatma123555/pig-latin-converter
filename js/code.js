@@ -4,7 +4,7 @@
 // and in that function - check for punctuation to split it
 function pigLatinConverter(str) {
     if (str == "") {
-        return "Write something here!"
+        return "Write something first!"
     } 
     // if word is undefined - fix this! double spaces etc...
     new_sent = []
